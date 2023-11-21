@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Задает кодировку для HTML-документа (рекомендуется использовать кодировку UTF-8 - кодировка для Unicode)-->
+        <meta charset="UTF-8" />
+        <!--Мета тег "X-UA-Compatible" Управляет режимом отображением страниц в браузерах IE8+-->
+        <!--"IE=edge" всегда использует последний доступный стандартный режим отображения независимо от <!DOCTYPE>-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--Viewport - это видимая пользователю область веб-страницы, то, что может увидеть пользователь, не прибегая к прокрутке-->
+        <!--Meta-тег "viewport" сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
+        <!--константа "device-width", которая задаёт ширину страницы в соответствии с размером экрана (с адаптивным дизайном width=device-width)-->
+        <!--"initial-scale" – начальный масштаб страницы (Значение 1.0 определяет масштаб 1:1, т.е. «не масштабировать»)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Подключение файла style.css-->
+        <link rel="stylesheet" href="css/style.min.css" />
+        <!--Подключение библиотеки JavaScript-->
+
+        <!--Название сайта-->
+        <title>Desire</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#"
+                                        >Gallery</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="logo" href="#">
+                            <img
+                                class="logo__img"
+                                src="images/logo.png"
+                                alt="logo"
+                            />
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">Blog</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__btn">
+                            <img src="images/icon_btn.svg" alt="icon-btn" />
+                        </button>
+                        <!-- <div class="rightside-menu">
+            <button class="rightside-menu__close">
+              <img class="rightside-menu__close-img" src="images/icon_close.svg" alt="icon-close">
+            </button>
+            <div class="rightside-menu__inner">
+              <img class="rightside-menu__logo" src="images/rightside_logo.png" alt="logo">
+              <h3 class="rightside-menu__title">Furniture for life</h3>
+              <p class="rightside-menu__text">
+                Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
+              </p>
+              <img class="rightside-menu__image" src="images/rightside_image.jpg" alt="image">
+            </div>
+          </div> -->
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="top">
+                    <div class="top__inner">
+                        <div class="top__slider">
+                            <div class="top__slider-item">
+                                <img
+                                    class="top__slider-img"
+                                    src="images/top_image.png"
+                                    alt="image"
+                                />
+                                <div class="top__slider-info">
+                                    <h1 class="top__slider-title">
+                                        Furniture collection
+                                    </h1>
+                                    <p class="top__slider-text">
+                                        Deep v you probably haven't heard of
+                                        them banh mi synth actually affogato.
+                                        Aesthetic lyft ethical drinking vinegar
+                                        austint
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <img
+                                    class="top__slider-img"
+                                    src="images/top_image.png"
+                                    alt="image"
+                                />
+                                <div class="top__slider-info">
+                                    <h1 class="top__slider-title">
+                                        Furniture collection
+                                    </h1>
+                                    <p class="top__slider-text">
+                                        Deep v you probably haven't heard of
+                                        them banh mi synth actually affogato.
+                                        Aesthetic lyft ethical drinking vinegar
+                                        austint
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <img
+                                    class="top__slider-img"
+                                    src="images/top_image.png"
+                                    alt="image"
+                                />
+                                <div class="top__slider-info">
+                                    <h1 class="top__slider-title">
+                                        Furniture collection
+                                    </h1>
+                                    <p class="top__slider-text">
+                                        Deep v you probably haven't heard of
+                                        them banh mi synth actually affogato.
+                                        Aesthetic lyft ethical drinking vinegar
+                                        austint
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="new-collection">
+                    <div class="container-fluid">
+                        <h3 class="new-collection__title">
+                            Furniture new collection
+                        </h3>
+                        <p class="new-collection__text">
+                            Deep v you probably haven't heard of them banh mi
+                            synth actually affogato. Aesthetic lyft ethical
+                            drinking vinegar austint
+                        </p>
+                        <div class="collection">
+                            <a class="collection__item" href="#">
+                                <img
+                                    class="collection__item-img"
+                                    src="images/content/collection-1.png"
+                                    alt="image"
+                                />
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Truffaut literally trust
+                                    </h4>
+                                    <p class="collection__item-text">
+                                        Living room furntiture | Chair
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="collection__item" href="#">
+                                <img
+                                    class="collection__item-img"
+                                    src="images/content/collection-2.png"
+                                    alt="image"
+                                />
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Truffaut literally trust
+                                    </h4>
+                                    <p class="collection__item-text">
+                                        Living room furntiture | Chair
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="collection__item" href="#">
+                                <img
+                                    class="collection__item-img"
+                                    src="images/content/collection-3.png"
+                                    alt="image"
+                                />
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Truffaut literally trust
+                                    </h4>
+                                    <p class="collection__item-text">
+                                        Living room furntiture | Chair
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="collection__item" href="#">
+                                <img
+                                    class="collection__item-img"
+                                    src="images/content/collection-4.png"
+                                    alt="image"
+                                />
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Truffaut literally trust
+                                    </h4>
+                                    <p class="collection__item-text">
+                                        Living room furntiture | Chair
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="collection__item" href="#">
+                                <img
+                                    class="collection__item-img"
+                                    src="images/content/collection-5.png"
+                                    alt="image"
+                                />
+                                <div class="collection__item-info">
+                                    <h4 class="collection__item-title">
+                                        Truffaut literally trust
+                                    </h4>
+                                    <p class="collection__item-text">
+                                        Living room furntiture | Chair
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="container">
+                        <h2 class="about__title">Aesthetic ethical drinking</h2>
+                        <p class="about__text">
+                            Deep v you probably haven't heard of them banh mi
+                            synth actually affogato. Artlyft ethical the one
+                            drinking vinegar austint
+                        </p>
+                    </div>
+                </section>
+                <section class="works">
+                    <div class="container">
+                        <h3 class="works__title">How it works</h3>
+                        <div class="works__inner">
+                            <div class="works__box">
+                                <div
+                                    class="works__box-item works__box-item--consultation"
+                                >
+                                    <div class="works__box-content">
+                                        <img
+                                            class="works__box-img"
+                                            src="images/plan.svg"
+                                            alt="image"
+                                        />
+                                        <h5 class="works__box-title">
+                                            Designer Consultation
+                                        </h5>
+                                    </div>
+                                    <p class="works__box-text">
+                                        Kinfolk scenester authentic craft beer
+                                        truffaut irony intelligentsia YOLO lomo
+                                        bushwick coloring book. Semiotics man
+                                        bun venmo viral cliche
+                                    </p>
+                                </div>
+                                <div
+                                    class="works__box-item works__box-item--production"
+                                >
+                                    <div class="works__box-content">
+                                        <img
+                                            class="works__box-img"
+                                            src="images/sofa.svg"
+                                            alt="image"
+                                        />
+                                        <h5 class="works__box-title">
+                                            Production
+                                        </h5>
+                                    </div>
+                                    <p class="works__box-text">
+                                        Everyday carry actually neutra authentic
+                                        kogi shabby chic
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="works__box-item works__box-item--measurements"
+                            >
+                                <div class="works__box-content">
+                                    <img
+                                        class="works__box-img"
+                                        src="images/tape.svg"
+                                        alt="image"
+                                    />
+                                    <h5 class="works__box-title">
+                                        Measurements
+                                    </h5>
+                                </div>
+                                <p class="works__box-text">
+                                    Intelligentsia YOLO lomo bushwick coloring
+                                    book. Semiotics man bun venmo viral cliche
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__contacts">
+                            <h5 class="footer__contacts-title">Contact Us</h5>
+                            <p class="footer__contacts-text">
+                                Keffiyeh poutine etsy, paleo cray put a bird on
+                                it microdosing schlitz you probably occupy
+                            </p>
+                            <a
+                                class="footer__contacts-email"
+                                href="mailto:ouremailaddress@email.com"
+                            >
+                                ouremailaddress@email.com
+                            </a>
+                            <form class="form" action="#">
+                                <input
+                                    class="form__text"
+                                    type="text"
+                                    placeholder="Subscribe by email"
+                                />
+                                <button class="form__btn" type="submit">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link facebook" href="#"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link instagram" href="#"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link pinterest" href="#"
+                                    >Pinterest</a
+                                >
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link whatsapp" href="#"
+                                    >Whatsapp</a
+                                >
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link youtube" href="#"
+                                    >Youtube</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#"
+                                    >Delivery</a
+                                >
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">FAQ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Help</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#"
+                                    >More About Us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    674 Gonzales Drive. Washington, PA 15301
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
